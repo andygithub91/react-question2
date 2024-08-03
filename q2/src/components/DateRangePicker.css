@@ -1,0 +1,77 @@
+.date-range-picker {
+  width: 350px;
+  height: 240px;
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+}
+
+.header {
+  width: 350px;
+  height: 44px;
+  margin-bottom: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f0f0f0;
+}
+
+.month-nav {
+  width: 44px;
+  height: 44px;
+  background-color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.month-nav:hover {
+  background-color: #e6e6e6;
+}
+
+.calendar {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 4px;
+}
+
+.weekday {
+  text-align: center;
+  font-weight: bold;
+  padding: 4px 0;
+}
+
+.day {
+  width: 50px;
+  height: 36px;
+  background-color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.day:hover:not(:disabled) {
+  background-color: #e6e6e6;
+}
+
+.today {
+  background-color: #ffff76;
+}
+
+.active {
+  background-color: #006edc;
+  color: white;
+}
+
+.selected {
+  background-color: #006edc;
+  color: white;
+}
+
+.other-month {
+  color: #757575;
+  background-color: #f0f0f0;
+  cursor: not-allowed;
+}
+
+.other-month:hover {
+  background-color: #f0f0f0;
+}
